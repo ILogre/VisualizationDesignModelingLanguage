@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="-1" />
+    </dependencies>
+    <rename id="d8ed.2758671089090575978" type="CHILD" from="widgets" to="visualizations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="0" />
+    </dependencies>
+    <rename id="d8ed.2758671089090580956" type="REFERENCE" from="before" to="precededBy" />
+  </StructureModification>
+</history>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies version="2" modelHash="-c98p1cv7qv77mgotm83rgozzmz350p5">
+  <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
+  <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
+  <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
+  <common hash="c0c8cksyx9pe2l0etxhk3aa72pdhrjr" dependsOnNodes="true">
+    <dep root="2758671089090574696" />
+    <dep root="2758671089090575909" />
+    <dep root="2758671089090577078" />
+    <dep root="2758671089090577194" />
+    <dep root="2758671089090577308" />
+    <dep root="2758671089090577706" />
+    <dep root="2758671089090577793" />
+    <dep root="2758671089090577882" />
+    <dep root="2758671089090577945" />
+    <dep root="2758671089090580916" />
+    <dep root="2758671089090587252" />
+    <dep root="2758671089090587349" />
+    <dep root="2758671089090591210" />
+    <dep root="2758671089090591386" />
+    <dep root="2758671089090591464" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
+    <file name="StructureAspectDescriptor.java" />
+  </common>
+  <source id="2758671089090574696" name="Dashboard" hash="-3p4hwxlm7zeah8tncyi6ugvnuyo8kec" />
+  <source id="2758671089090575909" name="VBox" hash="8zkyaaaf4s5okqkrz63w1yorxsy22c6" />
+  <source id="2758671089090577078" name="Visualization" hash="-clv252i9l9jwhqhkc7ku6pnv8kh8pl2" />
+  <source id="2758671089090577194" name="Concern" hash="-crnmb98ny6i65rmvy9q4s62xu3ljt3i" />
+  <source id="2758671089090577308" name="Data" hash="1y0wbixnd9gh0jb6956wojn03qo135m" />
+  <source id="2758671089090577706" name="Param" hash="3annicdnztu7g04mls8py8uultz7qkr" />
+  <source id="2758671089090577793" name="Numerical" hash="-7kw1fsa8hfrju9ykjhxzgo3z2tz9x54" />
+  <source id="2758671089090577882" name="Boolean" hash="-1fje0owb56e6a5vcnn0uqabptdytcwp" />
+  <source id="2758671089090577945" name="Textual" hash="-dy3gtdc3f9fs6zdz2xa1t29t2y6wl5s" />
+  <source id="2758671089090580916" name="Window" hash="-b5bj32gyrmqcvo1ju0zpaw1y0d33s9k" />
+  <source id="2758671089090587252" name="Enumeration" hash="9jmi1e4yk4tvf0irqit7vaba9myu20n" />
+  <source id="2758671089090587349" name="EElement" hash="-4vwjqjq0g3xyk0zyw6dpnmhxct95x9d" />
+  <source id="2758671089090591210" name="Interaction" hash="-d2sw5mhebbom0z0jfjnbzz7qsyh399" />
+  <source id="2758671089090591386" name="Reduce" hash="-7cvd3fpb4ak19wotzd6jntotcqxxwrh" />
+  <source id="2758671089090591464" name="MoveTo" hash="6958keabudc4zwxgjfj3kwbay5ncu6v" />
+</dependencies>
+
