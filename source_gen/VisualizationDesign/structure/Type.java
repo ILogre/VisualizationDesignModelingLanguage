@@ -30,7 +30,7 @@ public enum Type {
   }
 
   public static Type getDefault() {
-    return Type.num;
+    return null;
   }
 
   public static Type parseValue(String value) {

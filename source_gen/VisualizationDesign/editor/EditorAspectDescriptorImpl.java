@@ -18,15 +18,25 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Category_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new Dashboard_Editor());
+        return Collections.<ConceptEditor>singletonList(new Cell_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Data_Editor());
+        return Collections.<ConceptEditor>singletonList(new Column_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new HowQualifier_Editor());
+        return Collections.<ConceptEditor>singletonList(new Dashboard_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Source_Editor());
+        return Collections.<ConceptEditor>singletonList(new Data_Editor());
       case 5:
+        return Collections.<ConceptEditor>singletonList(new HowQualifier_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new Interaction_Editor());
+      case 7:
+        return Collections.<ConceptEditor>singletonList(new Line_Editor());
+      case 8:
+        return Collections.<ConceptEditor>singletonList(new Source_Editor());
+      case 9:
         return Collections.<ConceptEditor>singletonList(new Visualization_Editor());
+      case 10:
+        return Collections.<ConceptEditor>singletonList(new Window_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -38,5 +48,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
 
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Visualization"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Column", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.Line", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
 }

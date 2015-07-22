@@ -4,7 +4,7 @@ package VisualizationDesign.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public abstract class Interaction_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public class Interaction_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public Interaction_BehaviorDescriptor() {
   }
 

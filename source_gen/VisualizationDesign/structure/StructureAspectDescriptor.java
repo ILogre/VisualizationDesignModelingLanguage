@@ -34,7 +34,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 9:
         return new ConceptDescriptorBuilder("VisualizationDesign.structure.Icon").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").properties("path").create();
       case 10:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Interaction").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("target").abstract_().create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Interaction").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("filter", "goto").references("from", "to", "on").create();
       case 11:
         return new ConceptDescriptorBuilder("VisualizationDesign.structure.Line").super_("VisualizationDesign.structure.Container").parents("VisualizationDesign.structure.Container").alias("line", "").create();
       case 12:

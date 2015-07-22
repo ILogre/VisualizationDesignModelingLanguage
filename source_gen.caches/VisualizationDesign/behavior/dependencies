@@ -10,6 +10,7 @@
     <classNode dependClassName="VisualizationDesign.behavior.Discrete_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.HowQualifier_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Icon_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Interaction_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Line_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Property_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Source_BehaviorDescriptor" />
