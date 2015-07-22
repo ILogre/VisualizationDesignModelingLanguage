@@ -164,7 +164,7 @@
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="3860063985176127639" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="String" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="str" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="string" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3860063985176127812" nodeInfo="ig">

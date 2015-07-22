@@ -9,7 +9,7 @@ import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 public enum Type {
   num("num", "Numerical"),
   bool("bool", "Boolean"),
-  str("str", "String");
+  string("string", "String");
 
   private String myName;
 
@@ -25,7 +25,7 @@ public enum Type {
     List<Type> list = ListSequence.fromList(new LinkedList<Type>());
     ListSequence.fromList(list).addElement(Type.num);
     ListSequence.fromList(list).addElement(Type.bool);
-    ListSequence.fromList(list).addElement(Type.str);
+    ListSequence.fromList(list).addElement(Type.string);
     return list;
   }
 
@@ -43,8 +43,8 @@ public enum Type {
     if (value.equals(Type.bool.getValueAsString())) {
       return Type.bool;
     }
-    if (value.equals(Type.str.getValueAsString())) {
-      return Type.str;
+    if (value.equals(Type.string.getValueAsString())) {
+      return Type.string;
     }
     return Type.getDefault();
   }
