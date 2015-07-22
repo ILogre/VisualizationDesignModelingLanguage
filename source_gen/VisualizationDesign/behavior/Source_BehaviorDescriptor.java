@@ -7,8 +7,8 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class Concern_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
-  public Concern_BehaviorDescriptor() {
+public class Source_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+  public Source_BehaviorDescriptor() {
   }
 
   public String virtual_getFqName_1213877404258(SNode thisNode) {
@@ -17,6 +17,6 @@ public class Concern_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor i
 
   @Override
   public String getConceptFqName() {
-    return "VisualizationDesign.structure.Concern";
+    return "VisualizationDesign.structure.Source";
   }
 }

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="VisualizationDesign.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Boolean_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.Concern_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Category_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Cell_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Colorization_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Column_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Dashboard_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Data_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.EElement_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.Enumeration_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.MoveTo_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.Numerical_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.Reduce_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.Textual_BehaviorDescriptor" />
-    <classNode dependClassName="VisualizationDesign.behavior.VBox_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Discrete_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.HowQualifier_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Icon_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Line_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Property_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Source_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Structural_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Threshold_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Visualization_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Window_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.String" />
@@ -20,13 +23,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Boolean_BehaviorDescriptor" file="Boolean_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Param_BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="VisualizationDesign.behavior.Concern_BehaviorDescriptor" file="Concern_BehaviorDescriptor.java">
+  <dependency className="VisualizationDesign.behavior.Category_BehaviorDescriptor" file="Category_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
@@ -34,6 +31,30 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Cell_BehaviorDescriptor" file="Cell_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Colorization_BehaviorDescriptor" file="Colorization_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Column_BehaviorDescriptor" file="Column_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.Container_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Container_BehaviorDescriptor" file="Container_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="VisualizationDesign.behavior.Dashboard_BehaviorDescriptor" file="Dashboard_BehaviorDescriptor.java">
@@ -52,20 +73,26 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="VisualizationDesign.behavior.EElement_BehaviorDescriptor" file="EElement_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Enumeration_BehaviorDescriptor" file="Enumeration_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Param_BehaviorDescriptor" />
+  <dependency className="VisualizationDesign.behavior.Discrete_BehaviorDescriptor" file="Discrete_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.HowQualifier_BehaviorDescriptor" file="HowQualifier_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Icon_BehaviorDescriptor" file="Icon_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
@@ -76,19 +103,19 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.MoveTo_BehaviorDescriptor" file="MoveTo_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Interaction_BehaviorDescriptor" />
+  <dependency className="VisualizationDesign.behavior.Line_BehaviorDescriptor" file="Line_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.Container_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Numerical_BehaviorDescriptor" file="Numerical_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Param_BehaviorDescriptor" />
+  <dependency className="VisualizationDesign.behavior.Property_BehaviorDescriptor" file="Property_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Param_BehaviorDescriptor" file="Param_BehaviorDescriptor.java">
+  <dependency className="VisualizationDesign.behavior.Source_BehaviorDescriptor" file="Source_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
@@ -98,22 +125,16 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Reduce_BehaviorDescriptor" file="Reduce_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Interaction_BehaviorDescriptor" />
+  <dependency className="VisualizationDesign.behavior.Structural_BehaviorDescriptor" file="Structural_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="VisualizationDesign.behavior.Textual_BehaviorDescriptor" file="Textual_BehaviorDescriptor.java">
-    <classNode dependClassName="VisualizationDesign.behavior.Param_BehaviorDescriptor" />
+  <dependency className="VisualizationDesign.behavior.Threshold_BehaviorDescriptor" file="Threshold_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="VisualizationDesign.behavior.VBox_BehaviorDescriptor" file="VBox_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="VisualizationDesign.behavior.Visualization_BehaviorDescriptor" file="Visualization_BehaviorDescriptor.java">
@@ -124,6 +145,12 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" file="WhatQualifier_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="VisualizationDesign.behavior.Window_BehaviorDescriptor" file="Window_BehaviorDescriptor.java">

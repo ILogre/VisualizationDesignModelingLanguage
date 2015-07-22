@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-c98p1cv7qv77mgotm83rgozzmz350p5">
+<dependencies version="2" modelHash="-6wh4zgy1ncypsv4t6lr5f7iev5lnqdh">
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+  <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+  <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="5sdbpqxziyuazpb9j1p4zdk6bnvbn49" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="-5mgxduek28h3ywdzzsk4capaz4hgjm0" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="303xz1b2lyseld0axia86q3lpvucmq6" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="b4ewbuz42qcbg1awca5bacgi0vopxqt" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="a8elw7fctzg6sg8fe36u9gzu42axhdb" />
   <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" hash="efpygk1iagsrvh0j1nroncwiyw07vp1" />
-  <common hash="c0c8cksyx9pe2l0etxhk3aa72pdhrjr" dependsOnNodes="true">
+  <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="-8chtguhcvj45cjy0bx3xiqekte2lox7" />
+  <common hash="5s9fbcnehrxf5behyjtslnrf2ws2ha5" dependsOnNodes="true">
     <dep root="2758671089090574696" />
     <dep root="2758671089090575909" />
     <dep root="2758671089090577078" />
-    <dep root="2758671089090577194" />
     <dep root="2758671089090577308" />
-    <dep root="2758671089090577706" />
-    <dep root="2758671089090577793" />
-    <dep root="2758671089090577882" />
-    <dep root="2758671089090577945" />
     <dep root="2758671089090580916" />
-    <dep root="2758671089090587252" />
-    <dep root="2758671089090587349" />
     <dep root="2758671089090591210" />
-    <dep root="2758671089090591386" />
-    <dep root="2758671089090591464" />
+    <dep root="3860063985176045286" />
+    <dep root="3860063985176097690" />
+    <dep root="3860063985176107791" />
+    <dep root="3860063985176127581" />
+    <dep root="3860063985176127634" />
+    <dep root="3860063985176127812" />
+    <dep root="3860063985176127937" />
+    <dep root="3860063985176128043" />
+    <dep root="3860063985176128044" />
+    <dep root="3860063985176128045" />
+    <dep root="3860063985176128170" />
+    <dep root="3860063985176128237" />
+    <dep root="3860063985176128310" />
+    <dep root="3860063985176163889" />
+    <dep root="3860063985176164120" />
+    <dep root="3860063985176180887" />
+    <dep model="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
@@ -30,20 +42,52 @@
     <dep model="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="2758671089090574696" name="Dashboard" hash="-3p4hwxlm7zeah8tncyi6ugvnuyo8kec" />
-  <source id="2758671089090575909" name="VBox" hash="8zkyaaaf4s5okqkrz63w1yorxsy22c6" />
-  <source id="2758671089090577078" name="Visualization" hash="-clv252i9l9jwhqhkc7ku6pnv8kh8pl2" />
-  <source id="2758671089090577194" name="Concern" hash="-crnmb98ny6i65rmvy9q4s62xu3ljt3i" />
-  <source id="2758671089090577308" name="Data" hash="1y0wbixnd9gh0jb6956wojn03qo135m" />
-  <source id="2758671089090577706" name="Param" hash="3annicdnztu7g04mls8py8uultz7qkr" />
-  <source id="2758671089090577793" name="Numerical" hash="-7kw1fsa8hfrju9ykjhxzgo3z2tz9x54" />
-  <source id="2758671089090577882" name="Boolean" hash="-1fje0owb56e6a5vcnn0uqabptdytcwp" />
-  <source id="2758671089090577945" name="Textual" hash="-dy3gtdc3f9fs6zdz2xa1t29t2y6wl5s" />
-  <source id="2758671089090580916" name="Window" hash="-b5bj32gyrmqcvo1ju0zpaw1y0d33s9k" />
-  <source id="2758671089090587252" name="Enumeration" hash="9jmi1e4yk4tvf0irqit7vaba9myu20n" />
-  <source id="2758671089090587349" name="EElement" hash="-4vwjqjq0g3xyk0zyw6dpnmhxct95x9d" />
+  <source id="2758671089090574696" name="Dashboard" hash="-9qosyw7nuqtg1xl1bjz1avhkaohoocp" />
+  <source id="2758671089090575909" name="Column" hash="-85eh1sq1593puyt82nvkdk5cam4v2es" />
+  <source id="2758671089090577078" name="Visualization" hash="-1ggjbk6hnr8yq64em9bvzimk3l7bi6l" />
+  <source id="2758671089090577308" name="Data" hash="-cht2tcvhnsn0r92fzgeyi8fbw1fon5u" />
+  <source id="2758671089090580916" name="Window" hash="-adri9mn3ppvl0h00rvzmfuoszrlewqr" />
   <source id="2758671089090591210" name="Interaction" hash="-d2sw5mhebbom0z0jfjnbzz7qsyh399" />
-  <source id="2758671089090591386" name="Reduce" hash="-7cvd3fpb4ak19wotzd6jntotcqxxwrh" />
-  <source id="2758671089090591464" name="MoveTo" hash="6958keabudc4zwxgjfj3kwbay5ncu6v" />
+  <source id="3860063985176045286" name="Line" hash="-c0apkx8qb2t21isbac3gai6pmocl7i" />
+  <source id="3860063985176097690" name="Cell" hash="-98wpc2q9kddf6j506r66xy5m8n3wszg" />
+  <source id="3860063985176107791" name="Container" hash="-whmpswvj6kb3zc2g2cgv5dx1bgz0e1" />
+  <source id="3860063985176127581" name="Category" hash="c39n0qct134hkn0ptgsoalf4150rf4g" />
+  <source id="3860063985176127634" name="Type" hash="7yrf10craazp0gf36biw02wweh3joz7">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="Type.java" />
+    <file name="Type_PropertySupport.java" />
+  </source>
+  <source id="3860063985176127812" name="Source" hash="-1mnqfnuz6kunp95xfjkpo8heu0cejx0" />
+  <source id="3860063985176127937" name="WhatQualifier" hash="-8g9vxb643056kf8pvqvf9nco06znerr" />
+  <source id="3860063985176128043" name="Discrete" hash="-bfaqtyawlxsj4ji5sf1vfx1mio6lqaf" />
+  <source id="3860063985176128044" name="Property" hash="-ehflzu0y3hekxnn27dmqpysmvdx6ms3" />
+  <source id="3860063985176128045" name="Structural" hash="gim9nf4mceduqdvhsh9gq5vadna0bv" />
+  <source id="3860063985176128170" name="Icon" hash="-ervi34znzf9t71px7mgjkvuh9x9kdpi" />
+  <source id="3860063985176128237" name="Colorization" hash="7yo7h25o8h3c5c1w1pbckm52ffdgmxg" />
+  <source id="3860063985176128310" name="HowQualifier" hash="3vwyy2dygspa7cq220213mny45ce1vi" />
+  <source id="3860063985176163889" name="VisuConcern" hash="1i6o073dt0te2l8zsgvc54pg7cdpayu">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="VisuConcern.java" />
+    <file name="VisuConcern_PropertySupport.java" />
+  </source>
+  <source id="3860063985176164120" name="DataProperty" hash="9jtupavnop9n8poxqtsqjy5o1l3e1qq">
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <dep model="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
+    <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" />
+    <file name="DataProperty.java" />
+    <file name="DataProperty_PropertySupport.java" />
+  </source>
+  <source id="3860063985176180887" name="Threshold" hash="-cd3b5m8ytafj2k1biuja6wljoc6mw67" />
 </dependencies>
 

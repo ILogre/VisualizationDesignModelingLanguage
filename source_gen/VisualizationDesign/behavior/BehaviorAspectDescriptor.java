@@ -12,36 +12,42 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
 
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 2:
-        return new Dashboard_BehaviorDescriptor();
-      case 10:
-        return new VBox_BehaviorDescriptor();
-      case 11:
-        return new Visualization_BehaviorDescriptor();
-      case 1:
-        return new Concern_BehaviorDescriptor();
-      case 3:
-        return new Data_BehaviorDescriptor();
-      case 7:
-        return new Numerical_BehaviorDescriptor();
-      case 0:
-        return new Boolean_BehaviorDescriptor();
-      case 9:
-        return new Textual_BehaviorDescriptor();
-      case 12:
-        return new Window_BehaviorDescriptor();
-      case 5:
-        return new Enumeration_BehaviorDescriptor();
       case 4:
-        return new EElement_BehaviorDescriptor();
-      case 8:
-        return new Reduce_BehaviorDescriptor();
+        return new Dashboard_BehaviorDescriptor();
+      case 3:
+        return new Column_BehaviorDescriptor();
+      case 14:
+        return new Visualization_BehaviorDescriptor();
+      case 5:
+        return new Data_BehaviorDescriptor();
+      case 15:
+        return new Window_BehaviorDescriptor();
+      case 9:
+        return new Line_BehaviorDescriptor();
+      case 1:
+        return new Cell_BehaviorDescriptor();
+      case 0:
+        return new Category_BehaviorDescriptor();
+      case 11:
+        return new Source_BehaviorDescriptor();
       case 6:
-        return new MoveTo_BehaviorDescriptor();
+        return new Discrete_BehaviorDescriptor();
+      case 10:
+        return new Property_BehaviorDescriptor();
+      case 12:
+        return new Structural_BehaviorDescriptor();
+      case 8:
+        return new Icon_BehaviorDescriptor();
+      case 2:
+        return new Colorization_BehaviorDescriptor();
+      case 7:
+        return new HowQualifier_BehaviorDescriptor();
+      case 13:
+        return new Threshold_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
 
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"VisualizationDesign.structure.Boolean", "VisualizationDesign.structure.Concern", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.EElement", "VisualizationDesign.structure.Enumeration", "VisualizationDesign.structure.MoveTo", "VisualizationDesign.structure.Numerical", "VisualizationDesign.structure.Reduce", "VisualizationDesign.structure.Textual", "VisualizationDesign.structure.VBox", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Colorization", "VisualizationDesign.structure.Column", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.Discrete", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Icon", "VisualizationDesign.structure.Line", "VisualizationDesign.structure.Property", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Structural", "VisualizationDesign.structure.Threshold", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
 }

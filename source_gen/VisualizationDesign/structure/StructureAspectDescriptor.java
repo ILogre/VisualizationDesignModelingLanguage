@@ -14,39 +14,47 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
   public ConceptDescriptor getDescriptor(String conceptFqName) {
     switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0b, conceptFqName)) {
       case 0:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Boolean").super_("VisualizationDesign.structure.Param").parents("VisualizationDesign.structure.Param").properties("value").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Category").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("type").create();
       case 1:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Concern").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"params"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Cell").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("ponderation").references("visualizations").create();
       case 2:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Dashboard").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.execution.util.structure.IMainClass", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"windows"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Colorization").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").properties("color").create();
       case 3:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Data").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("url", "semantics").children(new String[]{"concerns"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Column").super_("VisualizationDesign.structure.Container").parents("VisualizationDesign.structure.Container").alias("column", "").create();
       case 4:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.EElement").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Container").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").children(new String[]{"cells"}, new boolean[]{true}).abstract_().create();
       case 5:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Enumeration").super_("VisualizationDesign.structure.Param").parents("VisualizationDesign.structure.Param").children(new String[]{"value"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Dashboard").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.execution.util.structure.IMainClass", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"windows", "data", "visualizations", "interactions"}, new boolean[]{true, true, true, true}).create();
       case 6:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Interaction").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("target").abstract_().create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Data").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("url").children(new String[]{"categories"}, new boolean[]{true}).create();
       case 7:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.MoveTo").super_("VisualizationDesign.structure.Interaction").parents("VisualizationDesign.structure.Interaction").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Discrete").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").create();
       case 8:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Numerical").super_("VisualizationDesign.structure.Param").parents("VisualizationDesign.structure.Param").properties("value").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.HowQualifier").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("concern").create();
       case 9:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Param").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").abstract_().create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Icon").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").properties("path").create();
       case 10:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Reduce").super_("VisualizationDesign.structure.Interaction").parents("VisualizationDesign.structure.Interaction").properties("dimension").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Interaction").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").references("target").abstract_().create();
       case 11:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Textual").super_("VisualizationDesign.structure.Param").parents("VisualizationDesign.structure.Param").properties("value").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Line").super_("VisualizationDesign.structure.Container").parents("VisualizationDesign.structure.Container").alias("line", "").create();
       case 12:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.VBox").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").properties("position").children(new String[]{"visualizations"}, new boolean[]{true}).alias("column", "").create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Property").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").properties("property").create();
       case 13:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Visualization").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("description").children(new String[]{"concerns", "data", "interactions"}, new boolean[]{true, true, true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Source").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").references("data", "field").children(new String[]{"concerns"}, new boolean[]{true}).create();
       case 14:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Window").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").references("precededBy", "followedBy").children(new String[]{"columns"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Structural").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").create();
+      case 15:
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Threshold").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").properties("ceiling", "floor").create();
+      case 16:
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Visualization").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"concerns", "source"}, new boolean[]{true, true}).create();
+      case 17:
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.WhatQualifier").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept").abstract_().create();
+      case 18:
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Window").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"containers"}, new boolean[]{true}).create();
       default:
         return StructureAspectInterpreted.getInstance().getDescriptor(conceptFqName);
     }
   }
 
-  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"VisualizationDesign.structure.Boolean", "VisualizationDesign.structure.Concern", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.EElement", "VisualizationDesign.structure.Enumeration", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.MoveTo", "VisualizationDesign.structure.Numerical", "VisualizationDesign.structure.Param", "VisualizationDesign.structure.Reduce", "VisualizationDesign.structure.Textual", "VisualizationDesign.structure.VBox", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
+  private static String[] stringSwitchCases_1htk8d_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Colorization", "VisualizationDesign.structure.Column", "VisualizationDesign.structure.Container", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.Discrete", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Icon", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.Line", "VisualizationDesign.structure.Property", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Structural", "VisualizationDesign.structure.Threshold", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.WhatQualifier", "VisualizationDesign.structure.Window"};
 }

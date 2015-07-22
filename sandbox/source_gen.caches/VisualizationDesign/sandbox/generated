@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="ee8hpgsz2tb60hhruco576jsmhceivg">
-  <common hash="6q81rys1tzpddy4zre3gmvgtev3fw0c" />
-  <source id="2758671089090586988" name="Jira" hash="6ir7s9c7zqpgs6jiy9k5h0l2gsk6cp5">
-    <file name="Jira" />
-  </source>
+<dependencies version="2" modelHash="9gk5debqiohea4fswkip6d17bctthf3">
+  <common hash="9gk5debqiohea4fswkip6d17bctthf3" />
 </dependencies>
 

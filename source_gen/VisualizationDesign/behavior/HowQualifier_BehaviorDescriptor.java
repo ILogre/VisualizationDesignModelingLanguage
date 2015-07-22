@@ -4,12 +4,12 @@ package VisualizationDesign.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class VBox_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public VBox_BehaviorDescriptor() {
+public class HowQualifier_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+  public HowQualifier_BehaviorDescriptor() {
   }
 
   @Override
   public String getConceptFqName() {
-    return "VisualizationDesign.structure.VBox";
+    return "VisualizationDesign.structure.HowQualifier";
   }
 }
