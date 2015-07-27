@@ -26,7 +26,7 @@ public class StructureAspectDescriptor implements jetbrains.mps.smodel.runtime.S
       case 5:
         return new ConceptDescriptorBuilder("VisualizationDesign.structure.Dashboard").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.execution.util.structure.IMainClass", "jetbrains.mps.lang.core.structure.INamedConcept").children(new String[]{"windows", "data", "visualizations", "interactions"}, new boolean[]{true, true, true, true}).create();
       case 6:
-        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Data").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.lang.core.structure.ScopeProvider").properties("url").children(new String[]{"categories"}, new boolean[]{true}).create();
+        return new ConceptDescriptorBuilder("VisualizationDesign.structure.Data").super_("jetbrains.mps.lang.core.structure.BaseConcept").parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").properties("url").children(new String[]{"categories"}, new boolean[]{true}).create();
       case 7:
         return new ConceptDescriptorBuilder("VisualizationDesign.structure.Discrete").super_("VisualizationDesign.structure.WhatQualifier").parents("VisualizationDesign.structure.WhatQualifier").create();
       case 8:

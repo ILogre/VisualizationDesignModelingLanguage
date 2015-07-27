@@ -14,6 +14,10 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class Source_Constraints extends BaseConstraintsDescriptor {
@@ -46,8 +50,35 @@ public class Source_Constraints extends BaseConstraintsDescriptor {
         };
       }
     });
+    references.put("data", new BaseReferenceConstraintsDescriptor("data", this) {
+      @Override
+      public boolean hasOwnScopeProvider() {
+        return true;
+      }
+
+      @Nullable
+      @Override
+      public ReferenceScopeProvider getScopeProvider() {
+        return new BaseReferenceScopeProvider() {
+          @Override
+          public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            return ListSequence.fromList(SNodeOperations.getAncestors(_context.getReferenceNode(), null, false)).ofType(SNode.class).translate(new ITranslator2<SNode, SNode>() {
+              public Iterable<SNode> translate(SNode it) {
+                return SLinkOperations.getTargets(it, "data", true);
+              }
+            });
+          }
+
+          @Override
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_4mlkax_a0a1a0a0a1a0b0a2a1;
+          }
+        };
+      }
+    });
     return references;
   }
 
-  private static SNodePointer breakingNode_4mlkax_a0a1a0a0a1a0b0a1a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985177328323");
+  private static SNodePointer breakingNode_4mlkax_a0a1a0a0a1a0b0a1a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985177577711");
+  private static SNodePointer breakingNode_4mlkax_a0a1a0a0a1a0b0a2a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985177811847");
 }

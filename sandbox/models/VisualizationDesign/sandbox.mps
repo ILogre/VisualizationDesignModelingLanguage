@@ -103,8 +103,9 @@
     <node role="visualizations" roleId="d8ed.3860063985175751101" type="d8ed.Visualization" typeId="d8ed.2758671089090577078" id="3860063985177397045" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="visTest" />
       <node role="concerns" roleId="d8ed.2758671089090577291" type="d8ed.HowQualifier" typeId="d8ed.3860063985176128310" id="3860063985177397046" nodeInfo="ng" />
-      <node role="source" roleId="d8ed.2758671089090577305" type="d8ed.Source" typeId="d8ed.3860063985176127812" id="3860063985177397047" nodeInfo="ng">
+      <node role="source" roleId="d8ed.2758671089090577305" type="d8ed.Source" typeId="d8ed.3860063985176127812" id="3860063985177789095" nodeInfo="ng">
         <link role="data" roleId="d8ed.3860063985176127815" targetNodeId="3860063985177397043" resolveInfo="dataTest" />
+        <link role="field" roleId="d8ed.3860063985176127873" targetNodeId="3860063985177397044" resolveInfo="fieldTest" />
       </node>
     </node>
   </root>
