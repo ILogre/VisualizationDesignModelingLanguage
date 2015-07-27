@@ -11,6 +11,7 @@
       <property name="goto" nameId="d8ed.3860063985177032041" value="true" />
       <link role="from" roleId="d8ed.3860063985177031968" targetNodeId="3860063985176855248" resolveInfo="StatusRepartition" />
       <link role="to" roleId="d8ed.2758671089090591509" targetNodeId="3860063985176586276" resolveInfo="ChartPriority" />
+      <link role="on" roleId="d8ed.3860063985177032044" targetNodeId="3860063985176586306" resolveInfo="assignee" />
     </node>
     <node role="windows" roleId="d8ed.2758671089090575898" type="d8ed.Window" typeId="d8ed.2758671089090580916" id="3860063985176586272" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="overview" />
@@ -84,6 +85,26 @@
         <link role="data" roleId="d8ed.3860063985176127815" targetNodeId="3860063985176586298" resolveInfo="tasksStatus" />
         <link role="field" roleId="d8ed.3860063985176127873" targetNodeId="3860063985176586299" resolveInfo="status" />
         <node role="concerns" roleId="d8ed.3860063985176127933" type="d8ed.Structural" typeId="d8ed.3860063985176128045" id="3860063985176924508" nodeInfo="ng" />
+      </node>
+    </node>
+  </root>
+  <root type="d8ed.Dashboard" typeId="d8ed.2758671089090574696" id="3860063985177397040" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="referenceCheck" />
+    <node role="windows" roleId="d8ed.2758671089090575898" type="d8ed.Window" typeId="d8ed.2758671089090580916" id="3860063985177397041" nodeInfo="ng">
+      <node role="containers" roleId="d8ed.2758671089090583894" type="d8ed.Container" typeId="d8ed.3860063985176107791" id="3860063985177397042" nodeInfo="ng" />
+    </node>
+    <node role="data" roleId="d8ed.3860063985175731759" type="d8ed.Data" typeId="d8ed.2758671089090577308" id="3860063985177397043" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="dataTest" />
+      <property name="url" nameId="d8ed.2758671089090577383" value="www.test.fr" />
+      <node role="categories" roleId="d8ed.3860063985176127756" type="d8ed.Category" typeId="d8ed.3860063985176127581" id="3860063985177397044" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="fieldTest" />
+      </node>
+    </node>
+    <node role="visualizations" roleId="d8ed.3860063985175751101" type="d8ed.Visualization" typeId="d8ed.2758671089090577078" id="3860063985177397045" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="visTest" />
+      <node role="concerns" roleId="d8ed.2758671089090577291" type="d8ed.HowQualifier" typeId="d8ed.3860063985176128310" id="3860063985177397046" nodeInfo="ng" />
+      <node role="source" roleId="d8ed.2758671089090577305" type="d8ed.Source" typeId="d8ed.3860063985176127812" id="3860063985177397047" nodeInfo="ng">
+        <link role="data" roleId="d8ed.3860063985176127815" targetNodeId="3860063985177397043" resolveInfo="dataTest" />
       </node>
     </node>
   </root>
