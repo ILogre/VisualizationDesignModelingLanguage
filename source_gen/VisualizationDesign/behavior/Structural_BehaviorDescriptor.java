@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Structural_BehaviorDescriptor extends WhatQualifier_BehaviorDescriptor {
   public Structural_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Structural";

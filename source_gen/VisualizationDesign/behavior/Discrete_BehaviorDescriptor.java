@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Discrete_BehaviorDescriptor extends WhatQualifier_BehaviorDescriptor {
   public Discrete_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Discrete";

@@ -13,15 +13,12 @@ public enum DataProperty {
   structural("structural", null);
 
   private String myName;
-
   public String getName() {
     return this.myName;
   }
-
   public String getValueAsString() {
     return this.myValue;
   }
-
   public static List<DataProperty> getConstants() {
     List<DataProperty> list = ListSequence.fromList(new LinkedList<DataProperty>());
     ListSequence.fromList(list).addElement(DataProperty.continuous);
@@ -30,11 +27,9 @@ public enum DataProperty {
     ListSequence.fromList(list).addElement(DataProperty.structural);
     return list;
   }
-
   public static DataProperty getDefault() {
     return DataProperty.continuous;
   }
-
   public static DataProperty parseValue(String value) {
     if (value == null) {
       return DataProperty.getDefault();
@@ -53,14 +48,11 @@ public enum DataProperty {
     }
     return DataProperty.getDefault();
   }
-
   private String myValue;
-
   DataProperty(String name, String value) {
     this.myName = name;
     this.myValue = value;
   }
-
   public String getValue() {
     return this.myValue;
   }

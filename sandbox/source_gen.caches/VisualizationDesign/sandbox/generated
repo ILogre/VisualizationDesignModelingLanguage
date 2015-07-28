@@ -1,11 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-9wh8t88jto6cwulfbunbbexrhk69or7">
-  <common hash="6x0xjtfop5hxzfqn728oycs8qiqcjyx" />
-  <source id="3860063985176586271" name="Jira" hash="-4zrn1lq9irdmiuy0gzwhnc24slpkgyu">
-    <file name="Jira" />
-  </source>
-  <source id="3860063985177397040" name="referenceCheck" hash="-5in0djdq7kadr1w3vcd5a10ehejoezw">
-    <file name="referenceCheck" />
-  </source>
-</dependencies>
+<dependencies version="2" modelHash="6oc3ntangxiz8ylkf14htyzfvu1pj2p" />
 

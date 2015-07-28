@@ -12,15 +12,12 @@ public enum Type {
   string("string", "String");
 
   private String myName;
-
   public String getName() {
     return this.myName;
   }
-
   public String getValueAsString() {
     return this.myValue;
   }
-
   public static List<Type> getConstants() {
     List<Type> list = ListSequence.fromList(new LinkedList<Type>());
     ListSequence.fromList(list).addElement(Type.num);
@@ -28,11 +25,9 @@ public enum Type {
     ListSequence.fromList(list).addElement(Type.string);
     return list;
   }
-
   public static Type getDefault() {
     return null;
   }
-
   public static Type parseValue(String value) {
     if (value == null) {
       return Type.getDefault();
@@ -48,14 +43,11 @@ public enum Type {
     }
     return Type.getDefault();
   }
-
   private String myValue;
-
   Type(String name, String value) {
     this.myName = name;
     this.myValue = value;
   }
-
   public String getValue() {
     return this.myValue;
   }

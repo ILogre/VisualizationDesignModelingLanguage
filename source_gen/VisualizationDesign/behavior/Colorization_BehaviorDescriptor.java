@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Colorization_BehaviorDescriptor extends WhatQualifier_BehaviorDescriptor {
   public Colorization_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Colorization";

@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Icon_BehaviorDescriptor extends WhatQualifier_BehaviorDescriptor {
   public Icon_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Icon";

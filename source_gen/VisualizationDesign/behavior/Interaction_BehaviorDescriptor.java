@@ -7,7 +7,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 public class Interaction_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public Interaction_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Interaction";

@@ -11,15 +11,12 @@ import jetbrains.mps.scope.Scope;
 public class Data_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
   public Data_BehaviorDescriptor() {
   }
-
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
   }
-
   public Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     return Data_Behavior.virtual_getScope_3734116213129936182(thisNode, kind, child);
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Data";

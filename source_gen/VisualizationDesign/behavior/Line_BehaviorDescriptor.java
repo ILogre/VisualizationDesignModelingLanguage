@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Line_BehaviorDescriptor extends Container_BehaviorDescriptor {
   public Line_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Line";

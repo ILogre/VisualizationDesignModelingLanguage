@@ -17,15 +17,12 @@ public enum VisuConcern {
   hierarchy("hierarchy", "hierarchy");
 
   private String myName;
-
   public String getName() {
     return this.myName;
   }
-
   public String getValueAsString() {
     return this.myValue;
   }
-
   public static List<VisuConcern> getConstants() {
     List<VisuConcern> list = ListSequence.fromList(new LinkedList<VisuConcern>());
     ListSequence.fromList(list).addElement(VisuConcern.proportion);
@@ -38,11 +35,9 @@ public enum VisuConcern {
     ListSequence.fromList(list).addElement(VisuConcern.hierarchy);
     return list;
   }
-
   public static VisuConcern getDefault() {
     return VisuConcern.proportion;
   }
-
   public static VisuConcern parseValue(String value) {
     if (value == null) {
       return VisuConcern.getDefault();
@@ -73,14 +68,11 @@ public enum VisuConcern {
     }
     return VisuConcern.getDefault();
   }
-
   private String myValue;
-
   VisuConcern(String name, String value) {
     this.myName = name;
     this.myValue = value;
   }
-
   public String getValue() {
     return this.myValue;
   }

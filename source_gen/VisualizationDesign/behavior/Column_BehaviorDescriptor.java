@@ -6,7 +6,6 @@ package VisualizationDesign.behavior;
 public class Column_BehaviorDescriptor extends Container_BehaviorDescriptor {
   public Column_BehaviorDescriptor() {
   }
-
   @Override
   public String getConceptFqName() {
     return "VisualizationDesign.structure.Column";

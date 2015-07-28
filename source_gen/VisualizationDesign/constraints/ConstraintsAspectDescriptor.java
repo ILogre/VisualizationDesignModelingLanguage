@@ -5,20 +5,25 @@ package VisualizationDesign.constraints;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import java.util.Arrays;
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
+import jetbrains.mps.smodel.adapter.ids.SConceptId;
 
 public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor {
   public ConstraintsAspectDescriptor() {
   }
-
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 0:
         return new Source_Constraints();
       default:
-        // todo: illegal in some cases? 
         return new BaseConstraintsDescriptor(fqName);
     }
   }
-
+  public ConstraintsDescriptor getDescriptor(SConceptId conceptId) {
+    long id = conceptId.getIdValue();
+    if (id == 0x3591b3be36b3a944L) {
+      return new Source_Constraints();
+    }
+    return new BaseConstraintsDescriptor(conceptId);
+  }
   private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"VisualizationDesign.structure.Source"};
 }
