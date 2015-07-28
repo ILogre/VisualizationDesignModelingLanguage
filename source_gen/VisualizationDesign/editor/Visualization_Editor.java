@@ -55,7 +55,7 @@ public class Visualization_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_mm8rro_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "shows ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "shows");
     editorCell.setCellId("Constant_mm8rro_b0");
     editorCell.setDefaultText("");
     return editorCell;

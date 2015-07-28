@@ -35,6 +35,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -239,7 +240,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="3mhGVSQIIOk" role="3EZMnx">
-        <property role="3F0ifm" value="shows " />
+        <property role="3F0ifm" value="shows" />
       </node>
       <node concept="3EZMnI" id="3mhGVSQIIOs" role="3EZMnx">
         <node concept="VPM3Z" id="3mhGVSQIIOu" role="3F10Kt">
@@ -272,8 +273,13 @@
   </node>
   <node concept="24kQdi" id="3mhGVSQINLk">
     <ref role="1XX52x" to="d8ed:3mhGVSQGUGQ" resolve="HowQualifier" />
-    <node concept="3F0A7n" id="3mhGVSQINLm" role="2wV5jI">
-      <ref role="1NtTu8" to="d8ed:3mhGVSQH3rs" resolve="concern" />
+    <node concept="3EZMnI" id="1f6gzsJ4VGj" role="2wV5jI">
+      <node concept="35HoNQ" id="1f6gzsJ55Lw" role="3EZMnx" />
+      <node concept="2iRfu4" id="1f6gzsJ4VGk" role="2iSdaV" />
+      <node concept="3F0A7n" id="3mhGVSQINLm" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <ref role="1NtTu8" to="d8ed:3mhGVSQH3rs" resolve="concern" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3mhGVSQISOs">

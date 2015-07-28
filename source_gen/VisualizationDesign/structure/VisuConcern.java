@@ -36,7 +36,7 @@ public enum VisuConcern {
     return list;
   }
   public static VisuConcern getDefault() {
-    return VisuConcern.proportion;
+    return null;
   }
   public static VisuConcern parseValue(String value) {
     if (value == null) {
