@@ -9,17 +9,16 @@ import java.util.HashMap;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
+import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
+import org.jetbrains.mps.openapi.model.SNodeReference;
+import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.model.SNodeReference;
-import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
-import jetbrains.mps.scope.Scope;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.scope.ListScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class Source_Constraints extends BaseConstraintsDescriptor {
@@ -39,15 +38,18 @@ public class Source_Constraints extends BaseConstraintsDescriptor {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {
-        return new BaseReferenceScopeProvider() {
+        return new BaseScopeProvider() {
           @Override
-          public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getReferenceNode(), "data", false), "categories", true);
+          public SNodeReference getSearchScopeValidatorNode() {
+            return breakingNode_4mlkax_a0a0a0a0a1a0b0a1a1;
           }
 
           @Override
-          public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_4mlkax_a0a1a0a0a1a0b0a1a1;
+          public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
+            {
+              List<SNode> catsNodes = SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getReferenceNode(), "data", false), "categories", true);
+              return ListScope.forNamedElements(catsNodes);
+            }
           }
         };
       }
@@ -80,6 +82,6 @@ public class Source_Constraints extends BaseConstraintsDescriptor {
     return references;
   }
 
-  private static SNodePointer breakingNode_4mlkax_a0a1a0a0a1a0b0a1a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985177577711");
+  private static SNodePointer breakingNode_4mlkax_a0a0a0a0a1a0b0a1a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985178424772");
   private static SNodePointer breakingNode_4mlkax_a0a0a0a0a1a0b0a2a1 = new SNodePointer("r:dc2e7fd3-98a3-482e-89de-b4d21fd86e7a(VisualizationDesign.constraints)", "3860063985177968870");
 }
