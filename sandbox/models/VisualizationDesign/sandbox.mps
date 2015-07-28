@@ -28,6 +28,12 @@
       <concept id="3860063985176107791" name="VisualizationDesign.structure.Container" flags="ng" index="38IyL">
         <child id="3860063985176107686" name="cells" index="38I$o" />
       </concept>
+      <concept id="3860063985176180887" name="VisualizationDesign.structure.Threshold" flags="ng" index="39sGD">
+        <property id="3860063985176180890" name="floor" index="39sG$" />
+        <property id="3860063985176180888" name="ceiling" index="39sGA" />
+        <property id="1424899136888971218" name="min" index="WKlR_" />
+        <property id="1424899136888971230" name="max" index="WKlRD" />
+      </concept>
       <concept id="2758671089090577078" name="VisualizationDesign.structure.Visualization" flags="ng" index="1FaCob">
         <child id="2758671089090577305" name="source" index="1FaCs$" />
         <child id="2758671089090577291" name="concerns" index="1FaCsQ" />
@@ -172,6 +178,12 @@
       <node concept="38xFU" id="3mhGVSQNgaB" role="1FaCs$">
         <ref role="38xFT" node="3mhGVSQLKsN" resolve="dataTest" />
         <ref role="38xCZ" node="3mhGVSQLKsO" resolve="fieldTest" />
+        <node concept="39sGD" id="1f6gzsJ1j8$" role="38xC3">
+          <property role="WKlR_" value="true" />
+          <property role="WKlRD" value="true" />
+          <property role="39sGA" value="10" />
+          <property role="39sG$" value="-5" />
+        </node>
       </node>
     </node>
     <node concept="1FaCob" id="3mhGVSQPPfX" role="3f5C3">
