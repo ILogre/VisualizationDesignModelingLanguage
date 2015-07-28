@@ -28,12 +28,6 @@
       <concept id="3860063985176107791" name="VisualizationDesign.structure.Container" flags="ng" index="38IyL">
         <child id="3860063985176107686" name="cells" index="38I$o" />
       </concept>
-      <concept id="3860063985176180887" name="VisualizationDesign.structure.Threshold" flags="ng" index="39sGD">
-        <property id="3860063985176180890" name="floor" index="39sG$" />
-        <property id="3860063985176180888" name="ceiling" index="39sGA" />
-        <property id="1424899136888971218" name="min" index="WKlR_" />
-        <property id="1424899136888971230" name="max" index="WKlRD" />
-      </concept>
       <concept id="2758671089090577078" name="VisualizationDesign.structure.Visualization" flags="ng" index="1FaCob">
         <child id="2758671089090577305" name="source" index="1FaCs$" />
         <child id="2758671089090577291" name="concerns" index="1FaCsQ" />
@@ -150,10 +144,17 @@
   </node>
   <node concept="1FaJRl" id="3mhGVSQLKsK">
     <property role="TrG5h" value="referenceCheck" />
+    <node concept="1FaFPn" id="1f6gzsJ2Nbs" role="3f5DZ">
+      <ref role="3kcqu" node="3mhGVSQPPfX" resolve="vt" />
+      <ref role="1FaFYC" node="1f6gzsJ4BKw" resolve="visuTest" />
+    </node>
     <node concept="1FaDk9" id="3mhGVSQLKsL" role="1FaJEB">
       <property role="TrG5h" value="main" />
       <node concept="1FaJEo" id="1f6gzsJ1j7N" role="1FaDBF">
-        <node concept="38C0$" id="1f6gzsJ1j7Q" role="38I$o" />
+        <node concept="38C0$" id="1f6gzsJ3knB" role="38I$o">
+          <property role="1FaCpe" value="3" />
+          <ref role="38K9e" node="3mhGVSQPPfX" resolve="vt" />
+        </node>
       </node>
     </node>
     <node concept="1FaCsx" id="3mhGVSQLKsN" role="3f2Qh">
@@ -172,19 +173,14 @@
         <property role="38xGI" value="Numerical" />
       </node>
     </node>
-    <node concept="1FaCob" id="3mhGVSQLKsP" role="3f5C3">
-      <property role="TrG5h" value="visTest" />
-      <node concept="38xy8" id="3mhGVSQLKsQ" role="1FaCsQ" />
-      <node concept="38xFU" id="3mhGVSQNgaB" role="1FaCs$">
-        <ref role="38xFT" node="3mhGVSQLKsN" resolve="dataTest" />
-        <ref role="38xCZ" node="3mhGVSQLKsO" resolve="fieldTest" />
-        <node concept="39sGD" id="1f6gzsJ1j8$" role="38xC3">
-          <property role="WKlR_" value="true" />
-          <property role="WKlRD" value="true" />
-          <property role="39sGA" value="10" />
-          <property role="39sG$" value="-5" />
-        </node>
+    <node concept="1FaCob" id="1f6gzsJ4BKw" role="3f5C3">
+      <property role="TrG5h" value="visuTest" />
+      <node concept="38xFU" id="1f6gzsJ4BKx" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQPE6x" resolve="dataTest2" />
+        <ref role="38xCZ" node="3mhGVSQPE6y" resolve="fieldTest2" />
+        <node concept="38xAj" id="1f6gzsJ4BKD" role="38xC3" />
       </node>
+      <node concept="38xy8" id="1f6gzsJ4BKy" role="1FaCsQ" />
     </node>
     <node concept="1FaCob" id="3mhGVSQPPfX" role="3f5C3">
       <property role="TrG5h" value="vt" />

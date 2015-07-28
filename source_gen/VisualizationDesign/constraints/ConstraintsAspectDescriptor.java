@@ -12,8 +12,12 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   }
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
-      case 0:
+      case 2:
         return new Source_Constraints();
+      case 0:
+        return new Cell_Constraints();
+      case 1:
+        return new Interaction_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -23,7 +27,13 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x3591b3be36b3a944L) {
       return new Source_Constraints();
     }
+    if (id == 0x3591b3be36b3339aL) {
+      return new Cell_Constraints();
+    }
+    if (id == 0x2648c4bd4d6279eaL) {
+      return new Interaction_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"VisualizationDesign.structure.Source"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.Source"};
 }
