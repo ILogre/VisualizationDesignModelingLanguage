@@ -7,10 +7,10 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum DataProperty {
-  continuous("continuous", null),
-  discrete("discrete", null),
-  scalar("scalar", null),
-  structural("structural", null);
+  continuous("continuous", "continuous"),
+  discrete("discrete", "discrete"),
+  scalar("scalar", "scalar"),
+  structural("structural", "structural");
 
   private String myName;
   public String getName() {
@@ -28,7 +28,7 @@ public enum DataProperty {
     return list;
   }
   public static DataProperty getDefault() {
-    return DataProperty.continuous;
+    return null;
   }
   public static DataProperty parseValue(String value) {
     if (value == null) {

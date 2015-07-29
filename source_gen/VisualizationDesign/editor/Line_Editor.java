@@ -20,6 +20,9 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 public class Line_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -32,6 +35,8 @@ public class Line_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createConstant_78ent8_a0(editorContext, node));
     editorCell.addEditorCell(this.createRefNodeList_78ent8_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_78ent8_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_78ent8_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_78ent8_e0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_78ent8_a0(EditorContext editorContext, SNode node) {
@@ -96,6 +101,28 @@ public class Line_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "]");
     editorCell.setCellId("Constant_78ent8_c0");
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_78ent8_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "size");
+    editorCell.setCellId("Constant_78ent8_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_78ent8_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("ponderation");
+    provider.setNoTargetText("<no ponderation>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_ponderation");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
 }

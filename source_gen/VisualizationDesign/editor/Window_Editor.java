@@ -12,7 +12,7 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -25,22 +25,28 @@ public class Window_Editor extends DefaultNodeEditor {
     return this.createCollection_areyby_a(editorContext, node);
   }
   private EditorCell createCollection_areyby_a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
     editorCell.setCellId("Collection_areyby_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_areyby_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_areyby_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_areyby_c0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_areyby_d0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_areyby_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_areyby_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_areyby_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_areyby_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
+    editorCell.setCellId("Collection_areyby_a0");
+    editorCell.addEditorCell(this.createConstant_areyby_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_areyby_b0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_areyby_c0a(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createConstant_areyby_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "view");
-    editorCell.setCellId("Constant_areyby_a0");
+    editorCell.setCellId("Constant_areyby_a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_areyby_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_areyby_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -56,21 +62,21 @@ public class Window_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_areyby_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_areyby_c0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_areyby_c0");
+    editorCell.setCellId("Constant_areyby_c0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_areyby_d0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Window_Editor.containersListHandler_areyby_d0(node, "containers", editorContext);
-    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
+  private EditorCell createRefNodeList_areyby_b0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Window_Editor.containersListHandler_areyby_b0(node, "containers", editorContext);
+    EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_containers");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class containersListHandler_areyby_d0 extends RefNodeListHandler {
-    public containersListHandler_areyby_d0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class containersListHandler_areyby_b0 extends RefNodeListHandler {
+    public containersListHandler_areyby_b0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {

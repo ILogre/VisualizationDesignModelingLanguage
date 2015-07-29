@@ -183,13 +183,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3mhGVSQGF7K" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="visualizations" />
+      <property role="20kJfa" value="visualization" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2p8LbPdo$aQ" resolve="Visualization" />
-    </node>
-    <node concept="1TJgyi" id="2p8LbPdo$bN" role="1TKVEl">
-      <property role="TrG5h" value="ponderation" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="3mhGVSQGPGf">
@@ -197,6 +193,10 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1f6gzsJ8y1b" role="1TKVEl">
+      <property role="TrG5h" value="ponderation" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="3mhGVSQGPEA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cells" />
@@ -218,6 +218,7 @@
   <node concept="AxPO7" id="3mhGVSQGUyi">
     <property role="TrG5h" value="Type" />
     <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3mhGVSQGUyj" role="M5hS2">
       <property role="1uS6qo" value="num" />
@@ -263,10 +264,6 @@
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
-  <node concept="1TIwiD" id="3mhGVSQGUCF">
-    <property role="TrG5h" value="Discrete" />
-    <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
-  </node>
   <node concept="1TIwiD" id="3mhGVSQGUCG">
     <property role="TrG5h" value="Property" />
     <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
@@ -275,17 +272,9 @@
       <ref role="AX2Wp" node="3mhGVSQH3so" resolve="DataProperty" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3mhGVSQGUCH">
-    <property role="TrG5h" value="Structural" />
-    <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
-  </node>
   <node concept="1TIwiD" id="3mhGVSQGUEE">
     <property role="TrG5h" value="Icon" />
     <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
-    <node concept="1TJgyi" id="3mhGVSQGUEF" role="1TKVEl">
-      <property role="TrG5h" value="path" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3mhGVSQGUFH">
     <property role="TrG5h" value="Colorization" />
@@ -345,18 +334,24 @@
   </node>
   <node concept="AxPO7" id="3mhGVSQH3so">
     <property role="TrG5h" value="DataProperty" />
+    <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="3mhGVSQH3sp" role="M5hS2">
       <property role="1uS6qo" value="continuous" />
+      <property role="1uS6qv" value="continuous" />
     </node>
     <node concept="M4N5e" id="3mhGVSQH3sq" role="M5hS2">
       <property role="1uS6qo" value="discrete" />
+      <property role="1uS6qv" value="discrete" />
     </node>
     <node concept="M4N5e" id="3mhGVSQH3sD" role="M5hS2">
       <property role="1uS6qo" value="scalar" />
+      <property role="1uS6qv" value="scalar" />
     </node>
     <node concept="M4N5e" id="3mhGVSQH3st" role="M5hS2">
       <property role="1uS6qo" value="structural" />
+      <property role="1uS6qv" value="structural" />
     </node>
   </node>
   <node concept="1TIwiD" id="3mhGVSQH7yn">

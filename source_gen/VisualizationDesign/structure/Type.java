@@ -7,9 +7,9 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
 
 public enum Type {
-  num("num", "Numerical"),
-  bool("bool", "Boolean"),
-  string("string", "String");
+  Numerical("num", "Numerical"),
+  Boolean("bool", "Boolean"),
+  String("string", "String");
 
   private String myName;
   public String getName() {
@@ -20,9 +20,9 @@ public enum Type {
   }
   public static List<Type> getConstants() {
     List<Type> list = ListSequence.fromList(new LinkedList<Type>());
-    ListSequence.fromList(list).addElement(Type.num);
-    ListSequence.fromList(list).addElement(Type.bool);
-    ListSequence.fromList(list).addElement(Type.string);
+    ListSequence.fromList(list).addElement(Type.Numerical);
+    ListSequence.fromList(list).addElement(Type.Boolean);
+    ListSequence.fromList(list).addElement(Type.String);
     return list;
   }
   public static Type getDefault() {
@@ -32,14 +32,14 @@ public enum Type {
     if (value == null) {
       return Type.getDefault();
     }
-    if (value.equals(Type.num.getValueAsString())) {
-      return Type.num;
+    if (value.equals(Type.Numerical.getValueAsString())) {
+      return Type.Numerical;
     }
-    if (value.equals(Type.bool.getValueAsString())) {
-      return Type.bool;
+    if (value.equals(Type.Boolean.getValueAsString())) {
+      return Type.Boolean;
     }
-    if (value.equals(Type.string.getValueAsString())) {
-      return Type.string;
+    if (value.equals(Type.String.getValueAsString())) {
+      return Type.String;
     }
     return Type.getDefault();
   }

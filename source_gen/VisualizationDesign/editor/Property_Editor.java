@@ -14,32 +14,32 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 
-public class HowQualifier_Editor extends DefaultNodeEditor {
+public class Property_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_qxltvt_a(editorContext, node);
+    return this.createCollection_d21pjf_a(editorContext, node);
   }
-  private EditorCell createCollection_qxltvt_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_d21pjf_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_qxltvt_a");
+    editorCell.setCellId("Collection_d21pjf_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createEmpty_qxltvt_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_qxltvt_b0(editorContext, node));
+    editorCell.addEditorCell(this.createEmpty_d21pjf_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_d21pjf_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createEmpty_qxltvt_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createEmpty_d21pjf_a0(EditorContext editorContext, SNode node) {
     EditorCell_Empty editorCell = new EditorCell_Empty(editorContext, node);
     editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode()));
     editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode()));
-    editorCell.setCellId("Empty_qxltvt_a0");
+    editorCell.setCellId("Empty_d21pjf_a0");
     return editorCell;
   }
-  private EditorCell createProperty_qxltvt_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_d21pjf_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("concern");
-    provider.setNoTargetText("concern?");
+    provider.setRole("property");
+    provider.setNoTargetText("<no property>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_concern");
+    editorCell.setCellId("property_property");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
