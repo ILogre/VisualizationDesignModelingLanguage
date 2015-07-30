@@ -16,6 +16,8 @@
       <concept id="3860063985176128310" name="VisualizationDesign.structure.HowQualifier" flags="ng" index="38xy8">
         <property id="3860063985176164060" name="concern" index="39oly" />
       </concept>
+      <concept id="3860063985176128170" name="VisualizationDesign.structure.Icon" flags="ng" index="38x$k" />
+      <concept id="3860063985176128237" name="VisualizationDesign.structure.Colorization" flags="ng" index="38x_j" />
       <concept id="3860063985176128044" name="VisualizationDesign.structure.Property" flags="ng" index="38xAi">
         <property id="3860063985176180821" name="property" index="39sJF" />
       </concept>
@@ -36,6 +38,8 @@
         <property id="1424899136890740811" name="ponderation" index="WT69W" />
         <child id="3860063985176107686" name="cells" index="38I$o" />
       </concept>
+      <concept id="3860063985176045286" name="VisualizationDesign.structure.Line" flags="ng" index="38Xlo" />
+      <concept id="1424899136891586570" name="VisualizationDesign.structure.Link" flags="ng" index="WUkCX" />
       <concept id="2758671089090577078" name="VisualizationDesign.structure.Visualization" flags="ng" index="1FaCob">
         <child id="2758671089090577305" name="source" index="1FaCs$" />
         <child id="2758671089090577291" name="concerns" index="1FaCsQ" />
@@ -75,9 +79,10 @@
       <property role="3kcrn" value="true" />
       <ref role="3kcqu" node="3mhGVSQJGbg" resolve="DetailledStatus" />
       <ref role="3kcri" node="3mhGVSQIEwB" resolve="assignee" />
+      <ref role="1FaFYC" node="1f6gzsJbdEI" resolve="TaskList" />
     </node>
     <node concept="1FaDk9" id="3mhGVSQIEww" role="1FaJEB">
-      <property role="TrG5h" value="overview" />
+      <property role="TrG5h" value="Group Overview" />
       <node concept="1FaJEo" id="3mhGVSQKgr1" role="1FaDBF">
         <property role="WT69W" value="1" />
         <node concept="38C0$" id="1f6gzsJ8Rnz" role="38I$o">
@@ -121,6 +126,42 @@
         </node>
       </node>
     </node>
+    <node concept="1FaDk9" id="1f6gzsJbW32" role="1FaJEB">
+      <property role="TrG5h" value="Task System" />
+      <node concept="1FaJEo" id="1f6gzsJbW3l" role="1FaDBF">
+        <property role="WT69W" value="1" />
+        <node concept="38C0$" id="1f6gzsJbW3o" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJbdEI" resolve="TaskList" />
+        </node>
+      </node>
+      <node concept="1FaJEo" id="1f6gzsJbW46" role="1FaDBF">
+        <property role="WT69W" value="3" />
+        <node concept="38C0$" id="1f6gzsJbW4b" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJb$WK" resolve="TaskDetails" />
+        </node>
+      </node>
+    </node>
+    <node concept="1FaDk9" id="1f6gzsJc7Xj" role="1FaJEB">
+      <property role="TrG5h" value="Kanban" />
+      <node concept="38Xlo" id="1f6gzsJc7XF" role="1FaDBF">
+        <property role="WT69W" value="1" />
+        <node concept="38C0$" id="1f6gzsJc7XI" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJbW4d" resolve="Kanban" />
+        </node>
+      </node>
+    </node>
+    <node concept="1FaDk9" id="1f6gzsJck6c" role="1FaJEB">
+      <property role="TrG5h" value="Tracking" />
+      <node concept="1FaJEo" id="1f6gzsJck9X" role="1FaDBF">
+        <property role="WT69W" value="1" />
+        <node concept="38C0$" id="1f6gzsJck9Z" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJc80k" resolve="ControlChart" />
+        </node>
+        <node concept="38C0$" id="1f6gzsJcka1" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJc8bB" resolve="CumulativeFlow" />
+        </node>
+      </node>
+    </node>
     <node concept="1FaCsx" id="3mhGVSQIEwy" role="3f2Qh">
       <property role="TrG5h" value="taskDetails" />
       <property role="1FaCtq" value="www.jira.api/rest/GetTasksById&amp;id=DF" />
@@ -148,6 +189,18 @@
         <property role="TrG5h" value="component" />
         <property role="38xGI" value="String" />
       </node>
+      <node concept="38xJz" id="1f6gzsJbWaw" role="38xEM">
+        <property role="TrG5h" value="description" />
+        <property role="38xGI" value="String" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJc88o" role="38xEM">
+        <property role="TrG5h" value="openningDate" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJc88x" role="38xEM">
+        <property role="TrG5h" value="closingDate" />
+        <property role="38xGI" value="Numerical" />
+      </node>
     </node>
     <node concept="1FaCsx" id="1f6gzsJ6yUB" role="3f2Qh">
       <property role="TrG5h" value="cumulatedStatusTasks" />
@@ -158,6 +211,18 @@
       </node>
       <node concept="38xJz" id="1f6gzsJ6yUQ" role="38xEM">
         <property role="TrG5h" value="created" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJcjZm" role="38xEM">
+        <property role="TrG5h" value="todo" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJcjZn" role="38xEM">
+        <property role="TrG5h" value="inProgress" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJcjZo" role="38xEM">
+        <property role="TrG5h" value="done" />
         <property role="38xGI" value="Numerical" />
       </node>
       <node concept="38xJz" id="1f6gzsJ6yUT" role="38xEM">
@@ -202,6 +267,22 @@
       </node>
       <node concept="38xJz" id="1f6gzsJ8xU_" role="38xEM">
         <property role="TrG5h" value="value" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+    </node>
+    <node concept="1FaCsx" id="1f6gzsJc84G" role="3f2Qh">
+      <property role="TrG5h" value="issuesControl" />
+      <property role="1FaCtq" value="www.jira.api/rest/GetIssuesTracking" />
+      <node concept="38xJz" id="1f6gzsJc84H" role="38xEM">
+        <property role="TrG5h" value="time" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJc856" role="38xEM">
+        <property role="TrG5h" value="efficiency" />
+        <property role="38xGI" value="Numerical" />
+      </node>
+      <node concept="38xJz" id="1f6gzsJc859" role="38xEM">
+        <property role="TrG5h" value="predictability" />
         <property role="38xGI" value="Numerical" />
       </node>
     </node>
@@ -437,8 +518,153 @@
       </node>
     </node>
     <node concept="1FaCob" id="1f6gzsJbdEI" role="3f5C3">
-      <node concept="38xFU" id="1f6gzsJbdEJ" role="1FaCs$" />
-      <node concept="38xy8" id="1f6gzsJbdEK" role="1FaCsQ" />
+      <property role="TrG5h" value="TaskList" />
+      <node concept="38xFU" id="1f6gzsJbdEJ" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwE" resolve="name" />
+        <node concept="38xAi" id="1f6gzsJb$WI" role="38xC3">
+          <property role="39sJF" value="scalar" />
+        </node>
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKp$" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJ5fMH" resolve="type" />
+        <node concept="38x$k" id="1f6gzsJbKpC" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbWaC" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJbWaw" resolve="description" />
+        <node concept="38xAi" id="1f6gzsJbWaI" role="38xC3">
+          <property role="39sJF" value="scalar" />
+        </node>
+      </node>
+      <node concept="38xy8" id="1f6gzsJbdEK" role="1FaCsQ">
+        <property role="39oly" value="part-to-a-whole" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJb$WF" role="1FaCsQ">
+        <property role="39oly" value="reference tool" />
+      </node>
+    </node>
+    <node concept="1FaCob" id="1f6gzsJb$WK" role="3f5C3">
+      <property role="TrG5h" value="TaskDetails" />
+      <node concept="38xFU" id="1f6gzsJb$WL" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwE" resolve="name" />
+        <node concept="38xAi" id="1f6gzsJbKpy" role="38xC3">
+          <property role="39sJF" value="scalar" />
+        </node>
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKpE" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwB" resolve="assignee" />
+        <node concept="WUkCX" id="1f6gzsJbVYy" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKsk" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwz" resolve="priotiry" />
+        <node concept="38x$k" id="1f6gzsJbKsK" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKsp" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJ6ek6" resolve="component" />
+        <node concept="WUkCX" id="1f6gzsJbVY$" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKsv" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwV" resolve="status" />
+        <node concept="38x$k" id="1f6gzsJbVYA" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbKsA" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJ5fMH" resolve="type" />
+        <node concept="38x$k" id="1f6gzsJbKsI" role="38xC3" />
+      </node>
+    </node>
+    <node concept="1FaCob" id="1f6gzsJbW4d" role="3f5C3">
+      <property role="TrG5h" value="Kanban" />
+      <node concept="38xFU" id="1f6gzsJbW4e" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwE" resolve="name" />
+        <node concept="WUkCX" id="1f6gzsJc7UG" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbWaK" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJbWaw" resolve="description" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbWaN" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="3mhGVSQIEwV" resolve="status" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJbWdl" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJ6ek6" resolve="component" />
+        <node concept="38x_j" id="1f6gzsJbWdq" role="38xC3" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJbW82" role="1FaCsQ">
+        <property role="39oly" value="distribution" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJbW84" role="1FaCsQ">
+        <property role="39oly" value="proportion" />
+      </node>
+    </node>
+    <node concept="1FaCob" id="1f6gzsJc80k" role="3f5C3">
+      <property role="TrG5h" value="ControlChart" />
+      <node concept="38xFU" id="1f6gzsJc80l" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJc84G" resolve="issuesControl" />
+        <ref role="38xCZ" node="1f6gzsJc84H" resolve="time" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJc85s" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJc84G" resolve="issuesControl" />
+        <ref role="38xCZ" node="1f6gzsJc856" resolve="efficiency" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJc85v" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJc84G" resolve="issuesControl" />
+        <ref role="38xCZ" node="1f6gzsJc859" resolve="predictability" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJc85z" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJc88o" resolve="openningDate" />
+        <node concept="38x$k" id="1f6gzsJc8bz" role="38xC3" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJc8bt" role="1FaCs$">
+        <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
+        <ref role="38xCZ" node="1f6gzsJc88x" resolve="closingDate" />
+        <node concept="38x$k" id="1f6gzsJc8b_" role="38xC3" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJc84z" role="1FaCsQ">
+        <property role="39oly" value="over-time" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJc84_" role="1FaCsQ">
+        <property role="39oly" value="distribution" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJc84C" role="1FaCsQ">
+        <property role="39oly" value="pattern" />
+      </node>
+    </node>
+    <node concept="1FaCob" id="1f6gzsJc8bB" role="3f5C3">
+      <property role="TrG5h" value="CumulativeFlow" />
+      <node concept="38xFU" id="1f6gzsJc8bC" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJ6yUB" resolve="cumulatedStatusTasks" />
+        <ref role="38xCZ" node="1f6gzsJ6yUC" resolve="time" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJck31" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJ6yUB" resolve="cumulatedStatusTasks" />
+        <ref role="38xCZ" node="1f6gzsJcjZo" resolve="done" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJck34" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJ6yUB" resolve="cumulatedStatusTasks" />
+        <ref role="38xCZ" node="1f6gzsJcjZm" resolve="todo" />
+      </node>
+      <node concept="38xFU" id="1f6gzsJck38" role="1FaCs$">
+        <ref role="38xFT" node="1f6gzsJ6yUB" resolve="cumulatedStatusTasks" />
+        <ref role="38xCZ" node="1f6gzsJcjZn" resolve="inProgress" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJc8dr" role="1FaCsQ">
+        <property role="39oly" value="proportion" />
+      </node>
+      <node concept="38xy8" id="1f6gzsJcjVo" role="1FaCsQ">
+        <property role="39oly" value="comparison" />
+      </node>
     </node>
   </node>
   <node concept="1FaJRl" id="3mhGVSQLKsK">

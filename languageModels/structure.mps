@@ -99,7 +99,7 @@
     <node concept="1TJgyj" id="2p8LbPdo$eb" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="concerns" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3mhGVSQGUGQ" resolve="HowQualifier" />
     </node>
     <node concept="1TJgyj" id="2p8LbPdo$ep" role="1TKVEi">
@@ -331,6 +331,18 @@
       <property role="1uS6qv" value="hierarchy" />
       <property role="1uS6qo" value="hierarchy" />
     </node>
+    <node concept="M4N5e" id="1f6gzsJbpx_" role="M5hS2">
+      <property role="1uS6qv" value="reference tool" />
+      <property role="1uS6qo" value="reference tool" />
+    </node>
+    <node concept="M4N5e" id="1f6gzsJbpyQ" role="M5hS2">
+      <property role="1uS6qv" value="range" />
+      <property role="1uS6qo" value="range" />
+    </node>
+    <node concept="M4N5e" id="1f6gzsJbp_h" role="M5hS2">
+      <property role="1uS6qo" value="pattern" />
+      <property role="1uS6qv" value="pattern" />
+    </node>
   </node>
   <node concept="AxPO7" id="3mhGVSQH3so">
     <property role="TrG5h" value="DataProperty" />
@@ -373,6 +385,10 @@
       <property role="TrG5h" value="max" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1f6gzsJbKwa">
+    <property role="TrG5h" value="Link" />
+    <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
   </node>
 </model>
 

@@ -26,6 +26,18 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
+  <dependency className="VisualizationDesign.editor.Colorization_Editor" file="Colorization_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="VisualizationDesign.editor.Column_Editor" file="Column_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
@@ -104,6 +116,7 @@
   <dependency className="VisualizationDesign.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
     <classNode dependClassName="VisualizationDesign.editor.Category_Editor" />
     <classNode dependClassName="VisualizationDesign.editor.Cell_Editor" />
+    <classNode dependClassName="VisualizationDesign.editor.Colorization_Editor" />
     <classNode dependClassName="VisualizationDesign.editor.Column_Editor" />
     <classNode dependClassName="VisualizationDesign.editor.Dashboard_Editor" />
     <classNode dependClassName="VisualizationDesign.editor.Data_Editor" />

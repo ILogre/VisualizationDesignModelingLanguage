@@ -14,7 +14,10 @@ public enum VisuConcern {
   relationship("relationship", "relationship"),
   over_time("over time", "over-time"),
   distribution("distribution", "distribution"),
-  hierarchy("hierarchy", "hierarchy");
+  hierarchy("hierarchy", "hierarchy"),
+  reference_tool("reference tool", "reference tool"),
+  range("range", "range"),
+  pattern("pattern", "pattern");
 
   private String myName;
   public String getName() {
@@ -33,6 +36,9 @@ public enum VisuConcern {
     ListSequence.fromList(list).addElement(VisuConcern.over_time);
     ListSequence.fromList(list).addElement(VisuConcern.distribution);
     ListSequence.fromList(list).addElement(VisuConcern.hierarchy);
+    ListSequence.fromList(list).addElement(VisuConcern.reference_tool);
+    ListSequence.fromList(list).addElement(VisuConcern.range);
+    ListSequence.fromList(list).addElement(VisuConcern.pattern);
     return list;
   }
   public static VisuConcern getDefault() {
@@ -65,6 +71,15 @@ public enum VisuConcern {
     }
     if (value.equals(VisuConcern.hierarchy.getValueAsString())) {
       return VisuConcern.hierarchy;
+    }
+    if (value.equals(VisuConcern.reference_tool.getValueAsString())) {
+      return VisuConcern.reference_tool;
+    }
+    if (value.equals(VisuConcern.range.getValueAsString())) {
+      return VisuConcern.range;
+    }
+    if (value.equals(VisuConcern.pattern.getValueAsString())) {
+      return VisuConcern.pattern;
     }
     return VisuConcern.getDefault();
   }

@@ -19,28 +19,30 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 1:
         return Collections.<ConceptEditor>singletonList(new Cell_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Column_Editor());
+        return Collections.<ConceptEditor>singletonList(new Colorization_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Dashboard_Editor());
+        return Collections.<ConceptEditor>singletonList(new Column_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Data_Editor());
+        return Collections.<ConceptEditor>singletonList(new Dashboard_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new HowQualifier_Editor());
+        return Collections.<ConceptEditor>singletonList(new Data_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new Icon_Editor());
+        return Collections.<ConceptEditor>singletonList(new HowQualifier_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new Interaction_Editor());
+        return Collections.<ConceptEditor>singletonList(new Icon_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new Line_Editor());
+        return Collections.<ConceptEditor>singletonList(new Interaction_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new Property_Editor());
+        return Collections.<ConceptEditor>singletonList(new Line_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new Source_Editor());
+        return Collections.<ConceptEditor>singletonList(new Property_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new Threshold_Editor());
+        return Collections.<ConceptEditor>singletonList(new Source_Editor());
       case 12:
-        return Collections.<ConceptEditor>singletonList(new Visualization_Editor());
+        return Collections.<ConceptEditor>singletonList(new Threshold_Editor());
       case 13:
+        return Collections.<ConceptEditor>singletonList(new Visualization_Editor());
+      case 14:
         return Collections.<ConceptEditor>singletonList(new Window_Editor());
       default:
     }
@@ -51,5 +53,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Column", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Icon", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.Line", "VisualizationDesign.structure.Property", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Threshold", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"VisualizationDesign.structure.Category", "VisualizationDesign.structure.Cell", "VisualizationDesign.structure.Colorization", "VisualizationDesign.structure.Column", "VisualizationDesign.structure.Dashboard", "VisualizationDesign.structure.Data", "VisualizationDesign.structure.HowQualifier", "VisualizationDesign.structure.Icon", "VisualizationDesign.structure.Interaction", "VisualizationDesign.structure.Line", "VisualizationDesign.structure.Property", "VisualizationDesign.structure.Source", "VisualizationDesign.structure.Threshold", "VisualizationDesign.structure.Visualization", "VisualizationDesign.structure.Window"};
 }

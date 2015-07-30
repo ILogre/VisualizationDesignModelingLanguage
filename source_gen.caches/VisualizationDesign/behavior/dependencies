@@ -11,6 +11,7 @@
     <classNode dependClassName="VisualizationDesign.behavior.Icon_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Interaction_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Line_BehaviorDescriptor" />
+    <classNode dependClassName="VisualizationDesign.behavior.Link_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Property_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Source_BehaviorDescriptor" />
     <classNode dependClassName="VisualizationDesign.behavior.Threshold_BehaviorDescriptor" />
@@ -106,6 +107,12 @@
   </dependency>
   <dependency className="VisualizationDesign.behavior.Line_BehaviorDescriptor" file="Line_BehaviorDescriptor.java">
     <classNode dependClassName="VisualizationDesign.behavior.Container_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="VisualizationDesign.behavior.Link_BehaviorDescriptor" file="Link_BehaviorDescriptor.java">
+    <classNode dependClassName="VisualizationDesign.behavior.WhatQualifier_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
