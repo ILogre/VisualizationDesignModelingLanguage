@@ -7,11 +7,6 @@
   </languages>
   <imports />
   <registry>
-    <language id="00000000-0000-0000-0000-000000000000" name="">
-      <concept id="0" name="" flags="ng" index="00000">
-        <reference id="0" name="" index="00000" />
-      </concept>
-    </language>
     <language id="29d64dc1-29c1-49b2-b7ea-be15992b2c4a" name="VisualizationDesign">
       <concept id="3860063985176128310" name="VisualizationDesign.structure.HowQualifier" flags="ng" index="38xy8">
         <property id="3860063985176164060" name="concern" index="39oly" />
@@ -21,7 +16,6 @@
       <concept id="3860063985176128044" name="VisualizationDesign.structure.Property" flags="ng" index="38xAi">
         <property id="3860063985176180821" name="property" index="39sJF" />
       </concept>
-      <concept id="3860063985176128045" name="VisualizationDesign.structure.Structural" flags="ng" index="38xAj" />
       <concept id="3860063985176127812" name="VisualizationDesign.structure.Source" flags="ng" index="38xFU">
         <reference id="3860063985176127873" name="field" index="38xCZ" />
         <reference id="3860063985176127815" name="data" index="38xFT" />
@@ -31,7 +25,6 @@
         <property id="3860063985176127632" name="type" index="38xGI" />
       </concept>
       <concept id="3860063985176097690" name="VisualizationDesign.structure.Cell" flags="ng" index="38C0$">
-        <property id="2758671089090577139" name="ponderation" index="1FaCpe" />
         <reference id="3860063985176064496" name="visualization" index="38K9e" />
       </concept>
       <concept id="3860063985176107791" name="VisualizationDesign.structure.Container" flags="ng" index="38IyL">
@@ -166,7 +159,7 @@
       <property role="TrG5h" value="taskDetails" />
       <property role="1FaCtq" value="www.jira.api/rest/GetTasksById&amp;id=DF" />
       <node concept="38xJz" id="3mhGVSQIEwz" role="38xEM">
-        <property role="TrG5h" value="priotiry" />
+        <property role="TrG5h" value="priority" />
         <property role="38xGI" value="String" />
       </node>
       <node concept="38xJz" id="3mhGVSQIEwB" role="38xEM">
@@ -319,7 +312,7 @@
       </node>
       <node concept="38xFU" id="3mhGVSQIEwA" role="1FaCs$">
         <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
-        <ref role="38xCZ" node="3mhGVSQIEwz" resolve="priotiry" />
+        <ref role="38xCZ" node="3mhGVSQIEwz" resolve="priority" />
         <node concept="38xAi" id="1f6gzsJ82LA" role="38xC3">
           <property role="39sJF" value="discrete" />
         </node>
@@ -561,7 +554,7 @@
       </node>
       <node concept="38xFU" id="1f6gzsJbKsk" role="1FaCs$">
         <ref role="38xFT" node="3mhGVSQIEwy" resolve="taskDetails" />
-        <ref role="38xCZ" node="3mhGVSQIEwz" resolve="priotiry" />
+        <ref role="38xCZ" node="3mhGVSQIEwz" resolve="priority" />
         <node concept="38x$k" id="1f6gzsJbKsK" role="38xC3" />
       </node>
       <node concept="38xFU" id="1f6gzsJbKsp" role="1FaCs$">
@@ -675,10 +668,10 @@
     </node>
     <node concept="1FaDk9" id="3mhGVSQLKsL" role="1FaJEB">
       <property role="TrG5h" value="main" />
-      <node concept="1FaJEo" id="1f6gzsJ1j7N" role="1FaDBF">
-        <node concept="38C0$" id="1f6gzsJ3knB" role="38I$o">
-          <property role="1FaCpe" value="3" />
-          <ref role="00000" node="3mhGVSQPPfX" resolve="vt" />
+      <node concept="1FaJEo" id="2S9iu4gbtlm" role="1FaDBF">
+        <property role="WT69W" value="9" />
+        <node concept="38C0$" id="2S9iu4gbtlo" role="38I$o">
+          <ref role="38K9e" node="1f6gzsJ4BKw" resolve="visuTest" />
         </node>
       </node>
     </node>
@@ -703,13 +696,17 @@
       <node concept="38xFU" id="1f6gzsJ4BKx" role="1FaCs$">
         <ref role="38xFT" node="3mhGVSQPE6x" resolve="dataTest2" />
         <ref role="38xCZ" node="3mhGVSQPE6y" resolve="fieldTest2" />
-        <node concept="38xAj" id="1f6gzsJ4BKD" role="38xC3" />
+        <node concept="WUkCX" id="2S9iu4gbnLd" role="38xC3" />
       </node>
-      <node concept="38xy8" id="1f6gzsJ4BKy" role="1FaCsQ" />
+      <node concept="38xy8" id="1f6gzsJ4BKy" role="1FaCsQ">
+        <property role="39oly" value="range" />
+      </node>
     </node>
     <node concept="1FaCob" id="3mhGVSQPPfX" role="3f5C3">
       <property role="TrG5h" value="vt" />
-      <node concept="38xy8" id="3mhGVSQPPfY" role="1FaCsQ" />
+      <node concept="38xy8" id="3mhGVSQPPfY" role="1FaCsQ">
+        <property role="39oly" value="location" />
+      </node>
       <node concept="38xFU" id="3mhGVSQPPfZ" role="1FaCs$">
         <ref role="38xFT" node="3mhGVSQLKsN" resolve="dataTest" />
         <ref role="38xCZ" node="3mhGVSQLKsO" resolve="fieldTest" />

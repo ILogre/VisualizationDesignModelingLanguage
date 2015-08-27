@@ -9,7 +9,6 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
-import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import VisualizationDesign.editor.EditorAspectDescriptorImpl;
@@ -34,7 +33,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"jetbrains.mps.execution.util", "jetbrains.mps.baseLanguage"};
+    return new String[]{};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
@@ -42,9 +41,6 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
-    if (descriptorClass == BehaviorAspectDescriptor.class) {
-      return (T) new VisualizationDesign.behavior.BehaviorAspectDescriptor();
-    }
     if (descriptorClass == ConstraintsAspectDescriptor.class) {
       return (T) new VisualizationDesign.constraints.ConstraintsAspectDescriptor();
     }
