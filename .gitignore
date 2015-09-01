@@ -1,6 +1,6 @@
 *.class
 *.info
-source_gen.caches/*
-source_gen/*
-generator/source_gen.caches/*
-generator/source_gen/*
+languages/VisualizationDesign/source_gen.caches/*
+languages/VisualizationDesign/source_gen/*
+languages/VisualizationDesign/generator/source_gen.caches/*
+languages/VisualizationDesign/generator/source_gen/*

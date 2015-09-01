@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a1e9306e-4974-49f9-a649-ca816c47cc6b(VisualizationDesign.generator.template.main@generator)">
+<model ref="r:e697bf84-4180-459f-bca6-a7aa7537fd62(VisualizationDesign.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="6fbd4f02-58b1-442c-afc6-54b37a98e64a" name="VisualizationDesign" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
-    <use id="29d64dc1-29c1-49b2-b7ea-be15992b2c4a" name="VisualizationDesign" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
@@ -19,7 +19,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="2p8LbPdozuu">
+  <node concept="bUwia" id="1t8GNCmhri9">
     <property role="TrG5h" value="main" />
   </node>
 </model>
