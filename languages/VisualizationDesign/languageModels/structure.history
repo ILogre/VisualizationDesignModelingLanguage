@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="-1" />
+    </dependencies>
+    <rename id="d8ed.2758671089090575978" type="CHILD" from="widgets" to="visualizations" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="0" />
+    </dependencies>
+    <rename id="d8ed.2758671089090580956" type="REFERENCE" from="before" to="precededBy" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="1" />
+    </dependencies>
+    <rename id="d8ed.2758671089090575909" type="CONCEPT" from="VBox" to="Column" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="2" />
+    </dependencies>
+    <rename id="d8ed.2758671089090577139" type="PROPERTY" from="position" to="ponderation" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="3" />
+    </dependencies>
+    <rename id="d8ed.2758671089090583894" type="CHILD" from="columns" to="containers" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="4" />
+    </dependencies>
+    <rename id="d8ed.2758671089090577305" type="CHILD" from="data" to="source" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="5" />
+    </dependencies>
+    <rename id="d8ed.3860063985176128044" type="CONCEPT" from="Continuous" to="Property" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="d8ed" modelUID="r:eaa496af-a352-48f3-b7f1-6f7636156def(VisualizationDesign.structure)" version="6" />
+    </dependencies>
+    <rename id="d8ed.2758671089090591509" type="REFERENCE" from="target" to="to" />
+  </StructureModification>
+</history>
+

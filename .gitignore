@@ -1,2 +1,6 @@
 *.class
 *.info
+source_gen.caches/*
+source_gen/*
+generator/source_gen.caches/*
+generator/source_gen/*
