@@ -68,12 +68,6 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="2p8LbPdo$aQ" resolve="Visualization" />
     </node>
-    <node concept="1TJgyj" id="3mhGVSQFuB1" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="interactions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2p8LbPdoBBE" resolve="Interaction" />
-    </node>
     <node concept="PrWs8" id="2p8LbPdozSo" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
@@ -180,24 +174,6 @@
       <ref role="20lvS9" node="3mhGVSQGNeq" resolve="Cell" />
     </node>
   </node>
-  <node concept="AxPO7" id="3mhGVSQGUyi">
-    <property role="TrG5h" value="Type" />
-    <property role="PDuV0" value="true" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="3mhGVSQGUyj" role="M5hS2">
-      <property role="1uS6qo" value="num" />
-      <property role="1uS6qv" value="Numerical" />
-    </node>
-    <node concept="M4N5e" id="3mhGVSQGUyk" role="M5hS2">
-      <property role="1uS6qo" value="bool" />
-      <property role="1uS6qv" value="Boolean" />
-    </node>
-    <node concept="M4N5e" id="3mhGVSQGUyn" role="M5hS2">
-      <property role="1uS6qo" value="string" />
-      <property role="1uS6qv" value="String" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3mhGVSQGU_4">
     <property role="TrG5h" value="Source" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -301,20 +277,12 @@
     <property role="TrG5h" value="Threshold" />
     <ref role="1TJDcQ" node="3mhGVSQGUB1" resolve="WhatQualifier" />
     <node concept="1TJgyi" id="3mhGVSQH7yo" role="1TKVEl">
-      <property role="TrG5h" value="ceiling" />
+      <property role="TrG5h" value="max" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3mhGVSQH7yq" role="1TKVEl">
-      <property role="TrG5h" value="floor" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="1f6gzsJ1LZi" role="1TKVEl">
       <property role="TrG5h" value="min" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="1f6gzsJ1LZu" role="1TKVEl">
-      <property role="TrG5h" value="max" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1f6gzsJbKwa">
